@@ -1,8 +1,9 @@
-package lab2;
+package lab2.service;
 
-import lab1.Apartment;
-import lab1.House;
-import lab1.People;
+
+import lab2.entity.Apartment;
+import lab2.entity.House;
+import lab2.entity.People;
 
 import java.util.Date;
 import java.util.List;

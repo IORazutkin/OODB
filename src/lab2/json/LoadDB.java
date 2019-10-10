@@ -1,10 +1,9 @@
-package lab2;
+package lab2.json;
 
 import com.google.gson.Gson;
-import lab1.Apartment;
-import lab1.House;
-import lab1.People;
-import lab1.Service;
+import lab2.entity.Apartment;
+import lab2.entity.House;
+import lab2.entity.People;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,6 +1,6 @@
-package lab2;
+package lab2.service;
 
-import lab1.House;
+import lab2.entity.House;
 
 import java.util.List;
 

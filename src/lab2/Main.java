@@ -1,8 +1,11 @@
 package lab2;
 
-import lab1.Apartment;
-import lab1.House;
-import lab1.People;
+import lab2.entity.Apartment;
+import lab2.entity.House;
+import lab2.entity.People;
+import lab2.json.LoadDB;
+import lab2.json.SaveDB;
+import lab2.service.PeopleService;
 
 import java.io.IOException;
 import java.util.List;
