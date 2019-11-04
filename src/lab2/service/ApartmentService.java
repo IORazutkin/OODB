@@ -10,6 +10,5 @@ public class ApartmentService {
                 .filter(x -> x.getHouse().getAddress().equals(address))
                 .filter(x -> x.getNumber() == number)
                 .findFirst().orElse(null);
-
     }
 }
