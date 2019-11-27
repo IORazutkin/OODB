@@ -5,11 +5,9 @@ import lab5.entity.House;
 import lab5.entity.Person;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.temporal.TemporalField;
 import java.util.List;
 import java.util.Scanner;
 

@@ -1,8 +1,10 @@
-package lab5.entity;
+package lab6.entity;
+
+import lab6.annotation.ManyToOne;
 
 public class Apartment {
     long apartment_id;
-
+    @ManyToOne
     House apartment_house;
     int apartment_number;
 
