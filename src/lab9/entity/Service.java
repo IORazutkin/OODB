@@ -1,8 +1,8 @@
-package lab7.entity;
+package lab9.entity;
 
-import lab7.annotation.Column;
-import lab7.annotation.Entity;
-import lab7.annotation.Id;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Service {

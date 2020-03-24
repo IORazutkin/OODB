@@ -1,10 +1,9 @@
-package lab7.entity;
+package lab9.entity;
 
-import lab7.annotation.Column;
-import lab7.annotation.Entity;
-import lab7.annotation.ManyToOne;
-import lab7.annotation.Id;
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 @Entity
@@ -12,15 +11,12 @@ public class Receipt {
     @Id
     @Column(name="id")
     long id;
-    @Column
     @ManyToOne
     Service service;
     @Column
     double value;
-    @Column
     @ManyToOne
     Apartment apartment;
-    @Column
     @ManyToOne
     Person payer;
     @Column

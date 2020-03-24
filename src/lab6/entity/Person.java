@@ -8,7 +8,6 @@ import java.sql.Date;
 
 @Entity
 public class Person {
-    @Column
     long person_id;
     @Column
     String full_name;

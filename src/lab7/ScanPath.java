@@ -3,28 +3,21 @@ package lab7;
 import java.io.File;
 import java.lang.reflect.Field;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public final class ScanPath {
-    private final static String PATH_NAME = "lab6.entity";
+    private final static String PATH_NAME = "lab7.entity";
 
-    public static HashMap<String, HashSet<String>> getPathStructure() {
-        HashMap<String, HashSet<String>> classes = new HashMap<>();
+    public static HashMap<String, HashSet<Field>> getPathStructure() {
+        HashMap<String, HashSet<Field>> classes = new HashMap<>();
 
         List<Class<?>> classList = find(PATH_NAME);
 
         for (Class<?> cl : classList) {
-            HashSet<String> hashSetFields = new HashSet<>();
 
             Field[] fields = cl.getDeclaredFields();
-            for (Field field : fields) {
-               hashSetFields.add(field.getName().toLowerCase());
-            }
 
-            classes.put(cl.getSimpleName().toLowerCase(), hashSetFields);
+            classes.put(cl.getSimpleName().toLowerCase(), new HashSet<>(Arrays.asList(fields)));
         }
 
         return classes;

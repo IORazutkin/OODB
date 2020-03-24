@@ -53,8 +53,7 @@ public class LoadDB {
 
             File file = new File("people.xml");
             if (file.exists()) {
-                List<People> list = ((PeopleWrapper) un.unmarshal(file)).getPeople();
-                return list;
+                return ((PeopleWrapper) un.unmarshal(file)).getPeople();
             }
 
             return new ArrayList<>();

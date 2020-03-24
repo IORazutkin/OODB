@@ -1,10 +1,9 @@
-package lab7.entity;
+package lab9.entity;
 
-import lab7.annotation.Column;
-import lab7.annotation.Entity;
-import lab7.annotation.ManyToOne;
-import lab7.annotation.Id;
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.sql.Date;
 
 @Entity
@@ -17,7 +16,6 @@ public class Person {
     @Column
     Date birth_day;
     @ManyToOne
-    @Column
     Apartment person_apartment;
 
     public Person() {

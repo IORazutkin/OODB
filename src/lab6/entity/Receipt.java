@@ -8,10 +8,8 @@ import java.util.Date;
 
 @Entity
 public class Receipt {
-    @Column
     long id;
     @ManyToOne
-    @Column
     Service service;
     @Column
     double value;

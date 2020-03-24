@@ -6,7 +6,6 @@ import lab6.annotation.Entity;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -67,18 +66,6 @@ public class Main {
         for (Class<?> cl : classes) {
             Class superClass = cl.getSuperclass();
             System.out.println("\tSuper class of " + cl.getName() + " is " + superClass.getName());
-        }
-
-        List<Node> nodes = new ArrayList<>();
-        System.out.println("STEP 7: class structure");
-        for (Class cl : classes) {
-            nodes.add(new Node(cl, null, null, classes));
-        }
-
-        Node.createStructure(nodes);
-
-        for (Node node : nodes) {
-            Node.toString(node, "");
         }
     }
 }
